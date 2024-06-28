@@ -1,0 +1,23 @@
+[project]
+name = "email-gpt"
+version = "0.1.0"
+description = "Add your description here"
+authors = [{ name = "Shroominic", email = "contact@shroominic.com" }]
+dependencies = ["funcchain>=0.3.5"]
+readme = "README.md"
+requires-python = ">= 3.12"
+license = { text = "MIT" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = ["mypy>=1.10.1", "ruff>=0.5.0"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
