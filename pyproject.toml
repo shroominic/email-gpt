@@ -3,7 +3,10 @@ name = "email-gpt"
 version = "0.1.0"
 description = "Add your description here"
 authors = [{ name = "Shroominic", email = "contact@shroominic.com" }]
-dependencies = ["funcchain>=0.3.5"]
+dependencies = [
+    "funcchain>=0.3.5",
+    "rich>=13.7.1",
+]
 readme = "README.md"
 requires-python = ">= 3.12"
 license = { text = "MIT" }
